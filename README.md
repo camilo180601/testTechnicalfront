@@ -13,7 +13,7 @@ El frontend permite:
 ---
 
 ## Tecnologías
-- **Angular 15+**
+- **Angular 19+**
 - **TypeScript**
 - **RxJS / Reactive Forms**
 - **Angular Material** (para interfaz y paginación)
@@ -100,5 +100,5 @@ npm run lint       # Revisa estilo y errores de código
 ---
 
 ## Autor
-Prueba técnica desarrollada por **[Tu nombre]** para **Docuu**.  
-Frontend desarrollado con **Angular 15**.
+Prueba técnica desarrollada por **Camilo Lopez** para **Docuu**.  
+Frontend desarrollado con **Angular 19**.

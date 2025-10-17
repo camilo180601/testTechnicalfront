@@ -1,0 +1,13 @@
+<div class="detail-container" *ngIf="order; else notFound">
+  <h2>Detalle de Orden #{{ order.id }}</h2>
+  <ul>
+    <li><strong>Cliente:</strong> {{ order.client_name }}</li>
+    <li><strong>Descripción:</strong> {{ order.description }}</li>
+    <li><strong>Estado:</strong> {{ order.status }}</li>
+    <li><strong>Fecha de entrega:</strong> {{ order.delivery_date }}</li>
+  </ul>
+</div>
+
+<ng-template #notFound>
+  <div class="error" *ngIf="error">{{ error }}</div>
+</ng-template>

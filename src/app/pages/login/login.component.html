@@ -1,0 +1,13 @@
+<div class="login-card">
+  <h2>Iniciar sesión</h2>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <label>Email</label>
+    <input formControlName="email" type="email" />
+
+    <label>Contraseña</label>
+    <input formControlName="password" type="password" />
+
+    <button type="submit" [disabled]="loading">Entrar</button>
+    <p *ngIf="error" class="error">{{ error }}</p>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+<div class="list-container">
+  <h2>Órdenes</h2>
+  <button (click)="create()">Nueva orden</button>
+  <button (click)="logout()">Cerrar Sesion</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <th>Descripción</th>
+        <th>Estado</th>
+        <th>Fecha de Entrega</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let o of orders">
+        <td>{{ o.client_name }}</td>
+        <td>{{ o.description }}</td>
+        <td>{{ o.status }}</td>
+        <td>{{ o.delivery_date }}</td>
+        <td>
+          <button (click)="view(o)">Ver</button>
+          <button (click)="edit(o)">Editar</button>
+          <button (click)="remove(o)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="error" class="error">{{ error }}</p>
+</div>
